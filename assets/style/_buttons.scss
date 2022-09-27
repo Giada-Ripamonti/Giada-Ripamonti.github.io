@@ -1,0 +1,49 @@
+/* ------ primary ------ */
+button {
+  width: 9rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  margin: 1rem;
+  border: none;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $monospace;
+    color: $dark-grey;
+  }
+  &:hover {
+    box-shadow: 4px 2px 10px 0px $lavander;
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+.primary-btn {
+  background-color: $lilac;
+  &:hover {
+    background: darken($lilac, 7%);
+  }
+}
+
+.secondary-btn {
+  background-color: $peach;
+  &:hover {
+    background: darken($peach, 7%);
+  }
+} 
+
+.disabled-btn {
+  background-color: lighten($peach, 10%);
+  border: 1px solid $dark-grey;
+  opacity: 90%;
+  &:hover {
+    background: $peach;
+    border:none;
+    opacity: 100%; 
+  }
+  &:active {
+    background: darken($peach, 7%);
+  }
+}

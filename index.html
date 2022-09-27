@@ -1,1 +1,344 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GiadaRipamonti</title>
+
+    <!-- link -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+
+    <link rel="stylesheet" href="/assets/style/reset.css" />
+    <link rel="stylesheet" href="/assets/style/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,400;1,400;1,700&display=swap");
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <h1 name="top">Giada Ripamonti</h1>
+        <p>
+          <a
+            href="https://www.linkedin.com/in/giada-ripamonti-600728141/"
+            target="_blank"
+            ><img src="/assets/img/linkedin.png" alt="linkedin-logo"
+          /></a>
+          <a href="https://github.com/Giada-Ripamonti" target="_blank"
+            ><img src="/assets/img/github.png" alt="github-logo"
+          /></a>
+        </p>
+      </div>
+
+      <div id="side-menu">
+        <div id="list-menu">
+          <nav>
+            <ul>
+              <li><a href="#about">| About</a></li>
+              <li><a href="#tools">| Tools</a></li>
+              <li><a href="#portfolio">| Portfolio</a></li>
+              <li><a href="#contact">| Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="side-bar">
+          <div>
+            <input id="hamburger" type="checkbox" name="" id="" />
+            <label for="hamburger">
+              <span id="line1"></span>
+              <span id="line2"></span>
+              <span id="line3"></span>
+            </label>
+          </div>
+
+          <div id="to-top">
+            <a href="#top">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="banner">
+        <h2>Jr. Web Designer</h2>
+        <div>
+          <p>{ UX/UI design }</p>
+          <p>+</p>
+          <p>{ front-end dev }</p>
+        </div>
+
+        <button class="primary-btn">
+          <a href="#contact">Email me!</a>
+        </button>
+      </div>
+
+      <div id="about">
+        <h2>| About</h2>
+        <p>
+          Affamata di conoscenza e sempre pronta ad affrontare nuove sfide,
+          circa un anno fa ho deciso di intraprendere un diverso percorso
+          professionale.
+        </p>
+        <p>
+          Il mio obiettivo ora è quello di rendere felice non solo l’utente, ma
+          anche il pianeta e iniziare così a cambiare il mondo, un sito alla
+          volta!
+        </p>
+        <p>🌿</p>
+      </div>
+
+      <div id="tools">
+        <h2>| Tools</h2>
+        <div class="scroll">
+          <div>
+            <img src="/assets/img/figma.png" alt="figma-logo" />
+            <p>Figma</p>
+          </div>
+          <div>
+            <img src="/assets/img/illustrator.png" alt="illustrator-logo" />
+            <p>Illustrator</p>
+          </div>
+          <div>
+            <img src="/assets/img/indesign.png" alt="indesign-logo" />
+            <p>Indesign</p>
+          </div>
+        </div>
+        <div class="scroll">
+          <div>
+            <img src="/assets/img/html.png" alt="html-logo" />
+            <p>HTML</p>
+          </div>
+          <div>
+            <img src="/assets/img/css-3.png" alt="css-logo" />
+            <p>CSS</p>
+          </div>
+          <div>
+            <img src="/assets/img/sass.png" alt="SASS-logo" />
+            <p>SASS</p>
+          </div>
+          <div>
+            <img src="/assets/img/javascript.png" alt="javascript-logo" />
+            <p>JavaScript</p>
+          </div>
+          <div>
+            <img src="/assets/img/typescript.png" alt="typescript-logo" />
+            <p>TypeScript</p>
+          </div>
+          <div>
+            <img src="/assets/img/react.png" alt="react-logo" />
+            <p>React</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="portfolio">
+        <h2>| Portfolio</h2>
+        <div>
+          <div class="card">
+            <div class="badge"><p>UX/UI</p></div>
+            <h3>Ecodream</h3>
+            <h4>Progetto Discovery</h4>
+            <div class="description">
+              <p>
+                Analisi as is, ricerca utente, personas e user journey per un
+                brand di borse green.
+              </p>
+            </div>
+            <div class="cta">
+              <button class="secondary-btn">
+                <a href="/assets/docs/Ecodream_Discovery.pdf" target="_blank"
+                  >Download</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="badge"><p>UX/UI</p></div>
+            <h3>Ortozero</h3>
+            <h4>Progetto Grafica</h4>
+            <div class="description">
+              <p>
+                Logo, color palette, icone, immagini per Facebook, YouTube e
+                Instagram per un e-commerce plant based.
+              </p>
+            </div>
+            <div class="cta">
+              <button class="secondary-btn">
+                <a href="/assets/docs/Ortozero_Grafica.pdf" target="_blank"
+                  >Download</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="badge"><p>UX/UI</p></div>
+            <h3>Green e-commerce</h3>
+            <h4>Sustainable design</h4>
+            <div class="description">
+              <p>
+                E-commerce basato su alcuni principi del web design sostenibile.
+              </p>
+            </div>
+            <div class="cta">
+              <button class="secondary-btn">
+                <a href="/assets/docs/E-commerce_Project.pdf" target="_blank"
+                  >Download</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="badge"><p>&lt;/&gt;</p></div>
+            <h3>Pollution App</h3>
+            <h4>Progetto ReactJS</h4>
+            <div class="description">
+              <p>
+                API OpenWeatherMap per geolocalizzazione, meteo e inquinamento
+                atmosfrico correnti.
+              </p>
+            </div>
+            <div class="cta">
+              <button class="secondary-btn">
+                <a href="https://pollution-app-sd96.vercel.app/" target="_blank"
+                  >Preview</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="badge"><p>&lt;/&gt;</p></div>
+            <h3>Phone Simulator</h3>
+            <h4>Progetto TypeScript</h4>
+            <div class="description">
+              <p>
+                Simulatore di chiamate con possibilità di ricarica e contatori
+                chiamate, durata, credito residuo.
+              </p>
+            </div>
+            <div class="cta">
+              <button class="secondary-btn">
+                <a href="https://phone-simulator.vercel.app/" target="_blank"
+                  >Preview</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="badge"><p>&lt;/&gt;</p></div>
+            <h3>Website Template</h3>
+            <h4>Progetto Bootstrap</h4>
+            <div class="description">
+              <p>
+                Template realizzato con Bootstrap e Sass. Toggle per dark theme.
+              </p>
+            </div>
+            <div class="cta">
+              <button class="secondary-btn">
+                <a
+                  href="https://bootstrap-template-two.vercel.app/"
+                  target="_blank"
+                  >Preview</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact">
+        <h2>Conosciamoci =)</h2>
+        <div>
+          <form id="contact-form">
+            <input type="hidden" name="contact_number" value="" />
+
+            <label for="user_name">Nome</label>
+            <input
+              type="text"
+              name="user_name"
+              placeholder="Nome"
+              value=""
+              required
+            />
+
+            <label for="company_name">Azienda</label>
+            <input
+              type="text"
+              name="company_name"
+              placeholder="Azienda"
+              value=""
+              required
+            />
+
+            <label for="user_email">Email</label>
+            <input
+              type="email"
+              name="user_email"
+              placeholder="example@email.com"
+              value=""
+              required
+            />
+
+            <label for="message">Messaggio</label>
+            <textarea
+              name="message"
+              value=""
+              placeholder="Ciao!"
+              required
+            ></textarea>
+
+            <div id="buttons">
+              <button type="reset" class="disabled-btn">
+                <a
+                  href="/assets/docs/Ripamonti-Giada_CV-2022.pdf"
+                  target="_blank"
+                  >Download CV</a
+                >
+              </button>
+              <button class="primary-btn" type="submit" value="Send">
+                Email me!
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <div id="success">
+      <p id="cross"><a href="#">𐤕</a></p>
+      <p>Email ricevuta!</p>
+    </div>
+
+    <footer>
+      <div>
+        <p>Giada Ripamonti | &copy;2022</p>
+        <p>Icons created by Freepik - Flaticon</p>
+      </div>
+
+      <div>
+        <a
+          href="https://www.linkedin.com/in/giada-ripamonti-600728141/"
+          target="_blank"
+          ><img src="/assets/img/linkedin.png" alt="linkedin-logo"
+        /></a>
+        <a href="https://github.com/Giada-Ripamonti" target="_blank"
+          ><img src="/assets/img/github.png" alt="github-logo"
+        /></a>
+      </div>
+    </footer>
+
+    <script src="/assets/js/sript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+/* ------ mediaqueries ------ */
+@mixin screen-min($min) {
+  @media (min-width: $min) {
+    @content;
+  }
+}
+
+/* ------ transitions ------ */
+@mixin transition(
+  $property: all,
+  $duration: 5s,
+  $ease: cubic-bezier(0.65, 0, 0.076, 1)
+) {
+  transition: $property $duration $ease;
+}
