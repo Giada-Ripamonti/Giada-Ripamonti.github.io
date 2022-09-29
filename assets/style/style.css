@@ -336,6 +336,46 @@ main p {
     justify-content: center;
   }
 }
+#banner button {
+  -webkit-animation: bkg 5s infinite;
+          animation: bkg 5s infinite;
+}
+@-webkit-keyframes bkg {
+  0% {
+    background-color: #e1d1e5;
+  }
+  25% {
+    background-color: #D6C1DC;
+  }
+  50% {
+    background-color: #cbb1d3;
+    box-shadow: 1px 1px 10px 0px #948585;
+  }
+  75% {
+    background-color: #D6C1DC;
+  }
+  100% {
+    background-color: #e1d1e5;
+  }
+}
+@keyframes bkg {
+  0% {
+    background-color: #e1d1e5;
+  }
+  25% {
+    background-color: #D6C1DC;
+  }
+  50% {
+    background-color: #cbb1d3;
+    box-shadow: 1px 1px 10px 0px #948585;
+  }
+  75% {
+    background-color: #D6C1DC;
+  }
+  100% {
+    background-color: #e1d1e5;
+  }
+}
 
 /* about */
 @media (min-width: 992px) {

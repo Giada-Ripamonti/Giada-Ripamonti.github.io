@@ -275,6 +275,27 @@ main {
       justify-content: center;
     }
   }
+  button {
+    animation: bkg 5s infinite;
+  }
+  @keyframes bkg {
+    0% {
+      background-color: lighten($lilac, 5%);
+    }
+    25% {
+      background-color: $lilac;
+    }
+    50% { 
+      background-color: darken($lilac, 5%);
+      box-shadow: 1px 1px 10px 0px lighten($dark-grey, 30%);
+    }
+    75% {
+      background-color:  $lilac;
+    }
+    100% { 
+      background-color: lighten($lilac, 5%);
+    }
+  } 
 }
 
 /* about */
